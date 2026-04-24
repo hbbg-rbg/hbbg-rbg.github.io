@@ -25,7 +25,7 @@ I build bias-aware, edge-ready speech and language models for under-represented 
   <tr>
     <td class="col-md-3">Oct 2025 - Present</td>
     <td>
-        <strong>Ph.D. in Computer Science</strong>
+        <strong>Ph.D. in Multimodal AI</strong>
         <br>
        Text Information Processing Lab, Department of Co-creative Engineering, Kitami Institute of Technology, Japan.
     </td>
@@ -52,18 +52,36 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 ## <i class="fa fa-chevron-right"></i> Professional Experience
 <table class="table table-hover">
   <tr>
-    <td class="col-md-3">Aug 2015 - Present</td>
+    <td class="col-md-3">Oct 2025 - Present</td>
     <td>
-        <strong>Ph.D. in Computer Science</strong>, Cognitive Science Practitioner <br>
+        <strong>Ph.D. in Multimodal AI</strong>
         <br>
-       Computational Engineering and Networking (CEN), Amrita School of Engineering, Coimbatore.
+       Text Information Processing Lab, Department of Co-creative Engineering, Kitami Institute of Technology, Japan.
+    </td>
+  </tr>
+
+<tr>
+    <td class="col-md-3">Aug 2020 - Sep 2025</td>
+    <td>
+        <strong>Head of Product Development</strong>
+        <br>
+       RBG.AI, Coimbatore, India.
+    </td>
+  </tr>
+
+<tr>
+    <td class="col-md-3">Mar 2018 - Jun 2020</td>
+    <td>
+        <strong>Chief Technology Officer & R&D Product Manager</strong>
+        <br>
+       Arnekt Solutions Pvt. Ltd., Pune, India
     </td>
   </tr>
   
 <tr>
   <td class='col-md-3'>Dec 2016 - July 2017</td>
   <td>
-    <strong>Research Scientist Analyst</strong>, Cognitive Science Practitioner <br>
+    <strong>Research Scientist Analyst</strong> <br>
      Accenture Innovation Center for Analytics, Artificial Intelligence, Accenture
   </td>
 </tr>
@@ -71,7 +89,7 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 <tr>
   <td class='col-md-3'>Sep 2015 - Dec 2016</td>
   <td>
-    <strong>Assistant System Engineer</strong>, Cognitive Science Practitioner <br>
+    <strong>Assistant System Engineer</strong> <br>
      Digital Enterprise Services and Solutions, Artificial Intelligence Practice, Tata Consultancy Services
   </td>
 </tr>
@@ -79,7 +97,7 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 <tr>
   <td class='col-md-3'>June 2015 - Aug 2015</td>
   <td>
-    <strong>Intern</strong>, Cognitive Science Practitioner <br>
+    <strong>Intern</strong> <br>
      Digital Enterprise Services and Solutions, Artificial Intelligence Practice, Tata Consultancy Services
   </td>
 </tr>
@@ -96,82 +114,131 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 <table class="table table-hover">
 
 <tr>
-<td class="col-md-3"><a href='http://ceur-ws.org/Vol-1996/paper16.pdf' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>
+<td class="col-md-3"><img src="images/publications/distang.png"/></a> </td>
 <td>
-    <strong>Health Care Text Classification through Class Embeddings</strong><br>
-    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Vinayakumar, Anand Kumar Madasamy, and Soman Kotti Padannayil <br>
-    SMM4H 2017<br>
+    <strong>Disentangled Speech Encoder: A Robust Encoder with Dynamic Adapter for Language Identification</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Jairam R, Michal Ptaszynski, Reshma U, Jyothish Lal G, Premjith B <br>
+    TidyLang Odyssey 2026<br>
     [1] 
 [<a href='javascript: none'
-    onclick='$("#abs_donti2017task").toggle()'>abs</a>] [<a href='http://ceur-ws.org/Vol-1996/paper16.pdf' target='_blank'>pdf</a>]  [<a href='https://github.com/BarathiGanesh-HB/hlp-2017/' target='_blank'>code</a>] <br>
+    onclick='$("#abs_2").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/SpeechEncoder-TidyLang' target='_blank'>code</a>] <br>
     
-<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">
-Artificial Intelligence has been a major breakthrough in many domains. Now, it has started automating health care
-domain through Natural Language Processing and Computer Vision applications. As a part of it, researchers are now
-focusing more on mining health related information from the text shared through social media and clinical trials. This
-paper explains about our system for health care text classification tasks conducted by Health Language Processing
-(HLP) Lab. We experimented with representing the target classes available in task 1 and task 2 as vectors. The
-classification has been performed using Support Vector Machine. To compute the representation for target classes,
-we used traditional methods available in Vector Space Models and Vector Space Models of Semantics. In this shared
-task, the task 1 is about distinguishing the tweets mentioning ”adverse drug reaction” from the ones which do not.
-The task 2 is about distinguishing the tweets that includes personal medication intake, possible medication intake and
-non-intake. The preliminary results are satisfying in-order to continue the research in developing a representation
-method for target classes.
+<div id="abs_2" style="text-align: justify; display: none">
+Spoken Language Recognition (SLR) in multilingual open set tasks is challenging due to the overlap between linguistic and speaker specific traits. Fine-tuning large foundation models distorts phonetic representations or leads to overfitting, limiting generalization to unseen speakers. To address this, we propose DisentangLID, a robust adaptation method for the TidyLang Challenge integrating a frozen dual branch backbone with a lightweight adapter and adversarial learning to enforce speaker invariant representations. The method aligns semantic representations from Wav2Vec-2.0-BERT with acoustic features from a ResNet34 encoder while preserving pretrained space. A key contribution is a controlled adaptation strategy that prevents feature drift while enabling task specific refinement. Dynamic under sampling and a two stage adversarial scheme improve robustness. The model achieves 96.01 micro and 86.92 macro accuracy on validation, and <strong>90.33</strong> micro, <strong>83.43</strong> macro accuracy on the test set.
 </div>
 
 </td>
 </tr>
 
 <tr>
-<td class="col-md-3"><a href='https://www.sciencedirect.com/science/article/pii/S2212017315003138/pdf?md5=b7626001e941cc8fc3dd38c36a8e0180&pid=1-s2.0-S2212017315003138-main.pdf' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>
+<td class="col-md-3"><img src="images/publications/aura-st.png"/></a> </td>
 <td>
-    <strong>Apache Spark a Big Data Analytics Platform for Smart Grid</strong><br>
-    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Shyam R, Sachin Kumar, Prabaharan Poornachandran and Soman KP <br>
-    Smart Grid Technologies<br>
+    <strong>AURA-ST: Acoustic-Unconstrained Residual Architecture for Speech Translation.</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma U, Jairam R <br>
+    IWSLT 2026<br>
     [1] 
 [<a href='javascript: none'
-    onclick='$("#abs_donti2017task").toggle()'>abs</a>] [<a href='https://www.sciencedirect.com/science/article/pii/S2212017315003138/pdf?md5=b7626001e941cc8fc3dd38c36a8e0180&pid=1-s2.0-S2212017315003138-main.pdf' target='_blank'>pdf</a>] <br>
+    onclick='$("#abs_1").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/IWSLT-2026-AURA-ST' target='_blank'>code</a>] <br>
     
-<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">
-Smart grid is a complete automation system, where large pool of sensors is embedded in the existing power grids system for controlling and monitoring it by utilizing modern information technologies. The data collected from these sensors are huge and have all the characteristics to be called as Big Data. The Smart-grid can be made more intelligent by processing and deriving new information from these data in real time. This paper presents Apache spark as a unified cluster computing platform which is suitable for storing and performing Big Data analytics on smart grid data for applications like automatic demand response and real time pricing.
+<div id="abs_1" style="text-align: justify; display: none">
+We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-text translation submitted to the IWSLT 2026 African-Celtic Track~1. The architecture bypasses traditional cross-attention between audio and text modalities by treating projected acoustic representations as a native token prefix to a frozen large language model. A dual-stream encoder captures linguistic and paralinguistic features via a jointly trained semantic and a paralinguistic encoder. A convolutional subsampler then bridges the modality gap through a $4\times$ temporal compression and a linear projection into the LLM embedding space. Finally, a MLP-targeted Low-Rank Adaptation adapter fine-tunes the frozen Gemma-4-E2B backbone for translation without catastrophic forgetting of base language model knowledge. We further identify and resolve the incompatibility between standard PEFT attention-level adapter injection and the Gemma-4 Per-Layer Embedding architecture that tends to cause gradient isolation. Trained on the IWSLT 2026 Track~1 data covering Hausa, Igbo, and Yoruba, the final system achieves a best proxy teacher-forced SacreBLEU of <strong>91.29</strong> on the validation set at Phase~3, with Phase~1 speech encoder validation loss converging to <strong>0.651</strong>.
 </div>
 
 </td>
 </tr>
 
-<tr>
-<td class="col-md-3"><a href='http://ceur-ws.org/Vol-1395/paper_20.pdf' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>
-<td>
-    <strong>Amrita-cen@ neel: Identification and linking of twitter entities</strong><br>
-    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Abinaya N, Anand Kumar M, Vinayakumar R and Soman KP <br>
-    Making Sense of Microposts (\# Microposts2015)<br>
-    [1] 
-[<a href='javascript: none'
-    onclick='$("#abs_donti2017task").toggle()'>abs</a>] [<a href='http://ceur-ws.org/Vol-1395/paper_20.pdf' target='_blank'>pdf</a>] <br>
-    
-<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">
-A short text gets updated every now and then. With the global upswing of such micro posts, the need to retrieve information from them also seems to be incumbent. This work focuses on the knowledge extraction from the micro posts by having entity as evidence. Here the extracted entities are then linked to their relevant DBpedia source by featurization, Part Of Speech (POS) tagging, Named Entity Recognition (NER) and Word Sense Disambiguation (WSD). This short paper encompasses its contribution to #Micropost2015 - NEEL task by experimenting existing Machine Learning (ML) algorithms.
-</div>
 
-</td>
-</tr>
 
-<tr>
-<td class="col-md-3"><a href='https://dl.acm.org/citation.cfm?id=2824882' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>
-<td>
-    <strong>AMRITA_CEN@FIRE-2014: Named Entity Recognition for Indian Languages using Rich Features</strong><br>
-    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Abinaya N, Neethu John, M. Anand Kumar and K. P. Soman <br>
-    FIRE 2014<br>
-    [1] 
-[<a href='javascript: none'
-    onclick='$("#abs_donti2017task").toggle()'>abs</a>] [<a href='https://dl.acm.org/citation.cfm?id=2824882' target='_blank'>pdf</a>] <br>
-    
-<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">
-This paper aims at implementing Named Entity Recognition (NER) for four languages such as English, Tamil, Hindi and Malayalam. The results obtained from this work are submitted to a research evaluation workshop Forum for Information Retrieval and Evaluation (FIRE 2014). This system detects three levels of named entity tags which are referred as nested named entities. It is a multi-label problem solved using chain classifier method. In this work, Conditional Random Field (CRF) and Support Vector Machine (SVM) are used for implementing NER system. In FIRE 2014, we developed a English NER system using CRF and other NER system for Tamil, Hindi and Malayalam are based on SVM. The FIRE estimated the average precision for all the four languages as 41.93 for outermost level and 33.25 for inner level. In order to improve the performance of Indian languages, we implemented CRF based NER system for the same corpus in Tamil, Hindi and Malayalam. The average precision measure for these mentioned languages are 42.87 for outer level and 36.31 for inner level. The overall performance of the NER system improved by 2.24% for outer level and 9.20% for inner level.
-</div>
 
-</td>
-</tr>
+[//]: # (<tr>)
+
+[//]: # (<td class="col-md-3"><a href='https://www.sciencedirect.com/science/article/pii/S2212017315003138/pdf?md5=b7626001e941cc8fc3dd38c36a8e0180&pid=1-s2.0-S2212017315003138-main.pdf' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>)
+
+[//]: # (<td>)
+
+[//]: # (    <strong>Apache Spark a Big Data Analytics Platform for Smart Grid</strong><br>)
+
+[//]: # (    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Shyam R, Sachin Kumar, Prabaharan Poornachandran and Soman KP <br>)
+
+[//]: # (    Smart Grid Technologies<br>)
+
+[//]: # (    [1] )
+
+[//]: # ([<a href='javascript: none')
+
+[//]: # (    onclick='$&#40;"#abs_donti2017task"&#41;.toggle&#40;&#41;'>abs</a>] [<a href='https://www.sciencedirect.com/science/article/pii/S2212017315003138/pdf?md5=b7626001e941cc8fc3dd38c36a8e0180&pid=1-s2.0-S2212017315003138-main.pdf' target='_blank'>pdf</a>] <br>)
+
+[//]: # (    )
+[//]: # (<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">)
+
+[//]: # (Smart grid is a complete automation system, where large pool of sensors is embedded in the existing power grids system for controlling and monitoring it by utilizing modern information technologies. The data collected from these sensors are huge and have all the characteristics to be called as Big Data. The Smart-grid can be made more intelligent by processing and deriving new information from these data in real time. This paper presents Apache spark as a unified cluster computing platform which is suitable for storing and performing Big Data analytics on smart grid data for applications like automatic demand response and real time pricing.)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</td>)
+
+[//]: # (</tr>)
+
+[//]: # (<tr>)
+
+[//]: # (<td class="col-md-3"><a href='http://ceur-ws.org/Vol-1395/paper_20.pdf' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>)
+
+[//]: # (<td>)
+
+[//]: # (    <strong>Amrita-cen@ neel: Identification and linking of twitter entities</strong><br>)
+
+[//]: # (    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Abinaya N, Anand Kumar M, Vinayakumar R and Soman KP <br>)
+
+[//]: # (    Making Sense of Microposts &#40;\# Microposts2015&#41;<br>)
+
+[//]: # (    [1] )
+
+[//]: # ([<a href='javascript: none')
+
+[//]: # (    onclick='$&#40;"#abs_donti2017task"&#41;.toggle&#40;&#41;'>abs</a>] [<a href='http://ceur-ws.org/Vol-1395/paper_20.pdf' target='_blank'>pdf</a>] <br>)
+
+[//]: # (    )
+[//]: # (<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">)
+
+[//]: # (A short text gets updated every now and then. With the global upswing of such micro posts, the need to retrieve information from them also seems to be incumbent. This work focuses on the knowledge extraction from the micro posts by having entity as evidence. Here the extracted entities are then linked to their relevant DBpedia source by featurization, Part Of Speech &#40;POS&#41; tagging, Named Entity Recognition &#40;NER&#41; and Word Sense Disambiguation &#40;WSD&#41;. This short paper encompasses its contribution to #Micropost2015 - NEEL task by experimenting existing Machine Learning &#40;ML&#41; algorithms.)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</td>)
+
+[//]: # (</tr>)
+
+[//]: # (<tr>)
+
+[//]: # (<td class="col-md-3"><a href='https://dl.acm.org/citation.cfm?id=2824882' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>)
+
+[//]: # (<td>)
+
+[//]: # (    <strong>AMRITA_CEN@FIRE-2014: Named Entity Recognition for Indian Languages using Rich Features</strong><br>)
+
+[//]: # (    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Abinaya N, Neethu John, M. Anand Kumar and K. P. Soman <br>)
+
+[//]: # (    FIRE 2014<br>)
+
+[//]: # (    [1] )
+
+[//]: # ([<a href='javascript: none')
+
+[//]: # (    onclick='$&#40;"#abs_donti2017task"&#41;.toggle&#40;&#41;'>abs</a>] [<a href='https://dl.acm.org/citation.cfm?id=2824882' target='_blank'>pdf</a>] <br>)
+
+[//]: # (    )
+[//]: # (<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">)
+
+[//]: # (This paper aims at implementing Named Entity Recognition &#40;NER&#41; for four languages such as English, Tamil, Hindi and Malayalam. The results obtained from this work are submitted to a research evaluation workshop Forum for Information Retrieval and Evaluation &#40;FIRE 2014&#41;. This system detects three levels of named entity tags which are referred as nested named entities. It is a multi-label problem solved using chain classifier method. In this work, Conditional Random Field &#40;CRF&#41; and Support Vector Machine &#40;SVM&#41; are used for implementing NER system. In FIRE 2014, we developed a English NER system using CRF and other NER system for Tamil, Hindi and Malayalam are based on SVM. The FIRE estimated the average precision for all the four languages as 41.93 for outermost level and 33.25 for inner level. In order to improve the performance of Indian languages, we implemented CRF based NER system for the same corpus in Tamil, Hindi and Malayalam. The average precision measure for these mentioned languages are 42.87 for outer level and 36.31 for inner level. The overall performance of the NER system improved by 2.24% for outer level and 9.20% for inner level.)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</td>)
+
+[//]: # (</tr>)
 
 </table>
 
