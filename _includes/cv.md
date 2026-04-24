@@ -119,7 +119,6 @@ I build bias-aware, edge-ready speech and language models for under-represented 
     <strong>Disentangled Speech Encoder: A Robust Encoder with Dynamic Adapter for Language Identification</strong><br>
     <strong>Barathi Ganesh HB </strong>, Jairam R, Michal Ptaszynski, Reshma U, Jyothish Lal G, Premjith B <br>
     TidyLang Odyssey 2026<br>
-    [1] 
 [<a href='javascript: none'
     onclick='$("#abs_2").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/SpeechEncoder-TidyLang' target='_blank'>code</a>] <br>
     
@@ -136,7 +135,6 @@ Spoken Language Recognition (SLR) in multilingual open set tasks is challenging 
     <strong>AURA-ST: Acoustic-Unconstrained Residual Architecture for Speech Translation.</strong><br>
     <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma U, Jairam R <br>
     IWSLT 2026<br>
-    [1] 
 [<a href='javascript: none'
     onclick='$("#abs_1").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/IWSLT-2026-AURA-ST' target='_blank'>code</a>] <br>
     
@@ -146,99 +144,6 @@ We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-te
 
 </td>
 </tr>
-
-
-
-
-[//]: # (<tr>)
-
-[//]: # (<td class="col-md-3"><a href='https://www.sciencedirect.com/science/article/pii/S2212017315003138/pdf?md5=b7626001e941cc8fc3dd38c36a8e0180&pid=1-s2.0-S2212017315003138-main.pdf' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>)
-
-[//]: # (<td>)
-
-[//]: # (    <strong>Apache Spark a Big Data Analytics Platform for Smart Grid</strong><br>)
-
-[//]: # (    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Shyam R, Sachin Kumar, Prabaharan Poornachandran and Soman KP <br>)
-
-[//]: # (    Smart Grid Technologies<br>)
-
-[//]: # (    [1] )
-
-[//]: # ([<a href='javascript: none')
-
-[//]: # (    onclick='$&#40;"#abs_donti2017task"&#41;.toggle&#40;&#41;'>abs</a>] [<a href='https://www.sciencedirect.com/science/article/pii/S2212017315003138/pdf?md5=b7626001e941cc8fc3dd38c36a8e0180&pid=1-s2.0-S2212017315003138-main.pdf' target='_blank'>pdf</a>] <br>)
-
-[//]: # (    )
-[//]: # (<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">)
-
-[//]: # (Smart grid is a complete automation system, where large pool of sensors is embedded in the existing power grids system for controlling and monitoring it by utilizing modern information technologies. The data collected from these sensors are huge and have all the characteristics to be called as Big Data. The Smart-grid can be made more intelligent by processing and deriving new information from these data in real time. This paper presents Apache spark as a unified cluster computing platform which is suitable for storing and performing Big Data analytics on smart grid data for applications like automatic demand response and real time pricing.)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (</td>)
-
-[//]: # (</tr>)
-
-[//]: # (<tr>)
-
-[//]: # (<td class="col-md-3"><a href='http://ceur-ws.org/Vol-1395/paper_20.pdf' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>)
-
-[//]: # (<td>)
-
-[//]: # (    <strong>Amrita-cen@ neel: Identification and linking of twitter entities</strong><br>)
-
-[//]: # (    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Abinaya N, Anand Kumar M, Vinayakumar R and Soman KP <br>)
-
-[//]: # (    Making Sense of Microposts &#40;\# Microposts2015&#41;<br>)
-
-[//]: # (    [1] )
-
-[//]: # ([<a href='javascript: none')
-
-[//]: # (    onclick='$&#40;"#abs_donti2017task"&#41;.toggle&#40;&#41;'>abs</a>] [<a href='http://ceur-ws.org/Vol-1395/paper_20.pdf' target='_blank'>pdf</a>] <br>)
-
-[//]: # (    )
-[//]: # (<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">)
-
-[//]: # (A short text gets updated every now and then. With the global upswing of such micro posts, the need to retrieve information from them also seems to be incumbent. This work focuses on the knowledge extraction from the micro posts by having entity as evidence. Here the extracted entities are then linked to their relevant DBpedia source by featurization, Part Of Speech &#40;POS&#41; tagging, Named Entity Recognition &#40;NER&#41; and Word Sense Disambiguation &#40;WSD&#41;. This short paper encompasses its contribution to #Micropost2015 - NEEL task by experimenting existing Machine Learning &#40;ML&#41; algorithms.)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (</td>)
-
-[//]: # (</tr>)
-
-[//]: # (<tr>)
-
-[//]: # (<td class="col-md-3"><a href='https://dl.acm.org/citation.cfm?id=2824882' target='_blank'><img src="https://github.com/hb-bg/hb-bg.github.io/blob/master/images/publications/hlp.png"/></a> </td>)
-
-[//]: # (<td>)
-
-[//]: # (    <strong>AMRITA_CEN@FIRE-2014: Named Entity Recognition for Indian Languages using Rich Features</strong><br>)
-
-[//]: # (    <strong>Barathi Ganesh Hullathy Balakrishnan</strong>, Abinaya N, Neethu John, M. Anand Kumar and K. P. Soman <br>)
-
-[//]: # (    FIRE 2014<br>)
-
-[//]: # (    [1] )
-
-[//]: # ([<a href='javascript: none')
-
-[//]: # (    onclick='$&#40;"#abs_donti2017task"&#41;.toggle&#40;&#41;'>abs</a>] [<a href='https://dl.acm.org/citation.cfm?id=2824882' target='_blank'>pdf</a>] <br>)
-
-[//]: # (    )
-[//]: # (<div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">)
-
-[//]: # (This paper aims at implementing Named Entity Recognition &#40;NER&#41; for four languages such as English, Tamil, Hindi and Malayalam. The results obtained from this work are submitted to a research evaluation workshop Forum for Information Retrieval and Evaluation &#40;FIRE 2014&#41;. This system detects three levels of named entity tags which are referred as nested named entities. It is a multi-label problem solved using chain classifier method. In this work, Conditional Random Field &#40;CRF&#41; and Support Vector Machine &#40;SVM&#41; are used for implementing NER system. In FIRE 2014, we developed a English NER system using CRF and other NER system for Tamil, Hindi and Malayalam are based on SVM. The FIRE estimated the average precision for all the four languages as 41.93 for outermost level and 33.25 for inner level. In order to improve the performance of Indian languages, we implemented CRF based NER system for the same corpus in Tamil, Hindi and Malayalam. The average precision measure for these mentioned languages are 42.87 for outer level and 36.31 for inner level. The overall performance of the NER system improved by 2.24% for outer level and 9.20% for inner level.)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (</td>)
-
-[//]: # (</tr>)
 
 </table>
 
