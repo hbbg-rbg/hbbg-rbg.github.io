@@ -1,15 +1,19 @@
-Cognitive Science Practitioner and Research Scholar (Ph.D.) with good theoretical – practical experience in Linear algebra, Optimization, Probabilistic Graphical Models, Machine Learning, Deep Learning and Dimensionality Reduction Methods. Specialized in the field of Natural Language Processing, Text Mining, Data Mining, Image Processing, Speech Processing and Distributional frameworks.
+I build bias-aware, edge-ready speech and language models for under-represented languages. Currently a Ph.D. candidate at the Kitami Institute of Technology , I am developing unified Multimodal, Multilingual, and Multitask (M3) transformers to ensure AI systems serve diverse linguistic identities with demographic fairness and structural equity.
 
 
-## <i class="fa fa-chevron-right"></i> News
+## <i class="fa fa-chevron-right"></i> On-going Research
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'> 22-23, Feb 2018</td>
-  <td>I will be handling "RIDING THROUGH THE NEURAL NETWORK'S PATH AND MIMIC YOUR NEURO CORTEX". In the workshop on <a href='https://anokha.amrita.edu/home.html#/workshop/26'>Anokha 2018 Deep Learning Workshop</a> at Computational Engineering and Networking (CEN), Amrita School of Engineering, Coimbatore. </td>
+  <td class='col-md-3'> May 2025</td>
+  <td><strong>WMT-2026:</strong> Participating in Indic Machine Translation Shared Task tackles this challenge by focusing on low-resource Indic languages from diverse language families. The focus will be on North Eastern languages like Assamese (State: Assam), Bodo (State: Assam), Mizo (State: Mizoram), Khasi (State: Meghalaya), Manipuri (State: Manipur), Kokborok (State: Tripura) and Nyishi (State: Arunachal Pradesh).</td>
 </tr>
 <tr>
-  <td class='col-md-3'> 27 Feb 2018</td>
-  <td>I will be handling Deep Learning with Python . In the Faculty Development Program (FDP) at Adi Shankara Institute of Engineering Technology, Kalady, Ernakulam, Kerala. </td>
+  <td class='col-md-3'> March 2025</td>
+  <td><strong>M3LM-Indic Corpus:</strong> Developing a 50K+ hour open corpus covering 23 languages, complete with emotion annotations and gender balancing, utilizing weak supervision for low-resource languages.</td>
+</tr>
+<tr>
+  <td class='col-md-3'> October 2025</td>
+  <td><strong>M3LM-Indic:</strong> A bias-aware, unified Multimodal, Multilingual, and Multitask (M3) Transformer for English and all 22 scheduled Indian languages under India's Constitution. It addresses the low-resource multilingual AI scaling crisis through depth-first specialization and para-linguistic bias-aware pre-training. </td>
 </tr>
 
 </table>
@@ -19,11 +23,11 @@ Cognitive Science Practitioner and Research Scholar (Ph.D.) with good theoretica
 
 <table class="table table-hover">
   <tr>
-    <td class="col-md-3">Aug 2015 - Present</td>
+    <td class="col-md-3">Oct 2025 - Present</td>
     <td>
         <strong>Ph.D. in Computer Science</strong>
         <br>
-       Computational Engineering and Networking (CEN), Amrita School of Engineering, Coimbatore.
+       Text Information Processing Lab, Department of Co-creative Engineering, Kitami Institute of Technology, Japan.
     </td>
   </tr>
   <tr>
@@ -40,12 +44,6 @@ Cognitive Science Practitioner and Research Scholar (Ph.D.) with good theoretica
         <strong>B.E. in Electronics and Communication Engineering</strong>
         <br>
       Anna University
-    </td>
-  </tr>
-  <tr>
-    <td class="col-md-3">Mar 2009</td>
-    <td>
-      St.Joseph Higher Secondary School, Ooty.
     </td>
   </tr>
 </table>
