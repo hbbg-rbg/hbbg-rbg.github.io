@@ -5,7 +5,7 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 <table class="table table-hover">
 <tr>
   <td class='col-md-3'> May 2025</td>
-  <td><strong>WMT-2026:</strong> Participating in Indic Machine Translation Shared Task tackles this challenge by focusing on low-resource Indic languages from diverse language families. The focus will be on North Eastern languages like Assamese (State: Assam), Bodo (State: Assam), Mizo (State: Mizoram), Khasi (State: Meghalaya), Manipuri (State: Manipur), Kokborok (State: Tripura) and Nyishi (State: Arunachal Pradesh).</td>
+  <td><strong>WMT-2026:</strong> Experimenting M3LM TextDecoder in Indic Machine Translation Shared Task. It focuses on low-resource Indic languages from diverse language families. The focus will be on North Eastern languages like Assamese (State: Assam), Bodo (State: Assam), Mizo (State: Mizoram), Khasi (State: Meghalaya), Manipuri (State: Manipur), Kokborok (State: Tripura) and Nyishi (State: Arunachal Pradesh).</td>
 </tr>
 <tr>
   <td class='col-md-3'> March 2025</td>
@@ -145,6 +145,22 @@ We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-te
 </td>
 </tr>
 
+<tr>
+<td class="col-md-3"><img src="images/publications/smm4h-2025.png"/></a> </td>
+<td>
+    <strong>SMM4H-HeaRD 2025: LLMs in Healthcare Applications.</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Anthony Vijay M., Naren Kishor S., Sharmila B., Jairam R., Jyothish Lal G. <br>
+    IWSLT 2026<br>
+[<a href='javascript: none'
+    onclick='$("#abs_1").toggle()'>abs</a>] [<a href='https://workshop-proceedings.icwsm.org/pdf/2025_63.pdf' target='_blank'>pdf</a>]  [<a href='https://github.com/rbg-research/SMM4H-2025' target='_blank'>code</a>] <br>
+    
+<div id="abs_1" style="text-align: justify; display: none">
+This paper presents a lightweight and unified LLM-based system designed for the SMM4H 2025 Task 4: Detection of Insomnia in Clinical Notes. We adopt a single-prompt inference approach using open-source language models constrained to 4B parameters for computational efficiency. On the official test set, RBG-AI achieved an F1-score of 0.9462 (Subtask 1), 0.75 (Subtask 2A), and 0.4631 (Subtask 2B), outperforming baseline metrics. Our results highlight the effectiveness of structured prompting and hybrid rule integration in clinical NLP applications.
+</div>
+
+</td>
+</tr>
+
 </table>
 
 
@@ -194,21 +210,32 @@ We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-te
 + "<strong>Introduction to Python</strong>" acquired from DataCamp.
 
 ## <i class="fa fa-chevron-right"></i> International Shared Tasks Participated
-+ Forum for Information Retrieval and Evaluation (FIRE-2014): NER - Named Entity Recognition Indian Languages
-+ Named Entity rEcognition and Linking (#Micropost2015 NEEL): Named Entity Recognition and Linking
-+ Semantic Evaluation Exercises (SemEval-2016): Semantic Textual Similarity
-+ PAN @ Conference and Labs of Evaluation Forum (PAN-2016): Author Profiling
-+ Forum for Information Retrieval and Evaluation (FIRE-2016): Mixed Script Information Retrieval (MSIR)
-+ Forum for Information Retrieval and Evaluation (FIRE-2016): Consumer Health Information Search (CHIS)
-+ Forum for Information Retrieval and Evaluation (FIRE-2016): Code Mixed Entity Extraction – Indian Languages (CMEE – IL)
++ African & Celtic Speech-to-Text Translation track (IWSLT-2026)
++ Speaker-Controlled Language Recognition (Odyssey - 2026 TidyLang)
++ Audio Encoder Capability Challenge for Large Audio Language Models (InterSpeech-2026 AECC)
++ Cross-Lingual Speaker Verification (InterSpeech-2026 TidyVoice)
++ Machine Translation (EMNLP WMT-2025)
++ Detection of insomnia in clinical notes (SMM4H-HeaRD 2025)
++ First Security and Privacy Analytics Anti-Phishing Shared Task (IWSPA-AP 2018)
++ Semantic Evaluation Exercises (SemEval-2018): Affect in Tweets
 + PAN @ Conference and Labs of Evaluation Forum (PAN-2017): Author Profiling
 + Forum for Information Retrieval and Evaluation (FIRE-2017): Gender Identification in Russian Texts (RusProfiling)
 + Forum for Information Retrieval and Evaluation (FIRE-2017) : Information Retrieval from Legal Documents (IRLeD)
 + 2nd Social Media Mining for Health Application shared task at AMIA 2017
 + Sentiment Analysis for Indian Languages (Code Mixed) SAIL 2017
 + The 8th International Cybersecurity  Data Mining Competition (CDMC-2017)
++ Semantic Evaluation Exercises (SemEval-2016): Semantic Textual Similarity
++ PAN @ Conference and Labs of Evaluation Forum (PAN-2016): Author Profiling
++ Forum for Information Retrieval and Evaluation (FIRE-2016): Mixed Script Information Retrieval (MSIR)
++ Forum for Information Retrieval and Evaluation (FIRE-2016): Consumer Health Information Search (CHIS)
++ Forum for Information Retrieval and Evaluation (FIRE-2016): Code Mixed Entity Extraction – Indian Languages (CMEE – IL)
++ Forum for Information Retrieval and Evaluation (FIRE-2014): NER - Named Entity Recognition Indian Languages
++ Named Entity rEcognition and Linking (#Micropost2015 NEEL): Named Entity Recognition and Linking
+
 
 ## <i class="fa fa-chevron-right"></i> Invited Talks
++ Topic: "<strong>Data Preprocessing and Feature Engineering: The Key to Successful Models</strong>" in the Faculty Development Programme at Dr. B.R. Ambedkar Institute of Technology Sri Vijyapuram Andaman & Nicobar Islands. 20, Jan 2025.
++ Topic: "<strong>Jailbreaking LLM</strong>" at Amrita University, Coimbatore. 18, October 2024. 
 + Topic: "<strong>Natural Language Processing with Deep Learning</strong>" in the Faculty Development Program (FDP) at Vidya Academy of Science & Technology, Thrissur. 20, Jan 2017.
 + Topic: "<strong>Deep Learning with Python</strong>" in the Faculty Development Program (FDP) at Mepco Schlenk Engineering College, Sivakasi. 16-17, Jan 2017.
 + Topic: "<strong>Dyanamic Mode Decomposition</strong>"  from scratch . In the workshop on <a href='https://barathiganesh-hb.github.io/cen-ddm2017/'>Data -Driven Modelling 2017</a> at Computational Engineering and Networking (CEN), Amrita School of Engineering, Coimbatore. 8-9, Jan 2017.
@@ -221,6 +248,9 @@ We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-te
 + Topic: "<strong>Web Mining through Data and Text Mining</strong>", Association Inauguration "ORBIT 2K16" conducted by Viswa Jyothi College of Engineering and Technology, Vazhakulam on August 2016.
 
 ## <i class="fa fa-chevron-right"></i> Workshops and Shared Tasks Conducted
++ "Generative AI" workshop for Advanced Data Science Students at St Joseph's College Of Engineering, Chennai. 01 to 07, April 2025.
++ "Generative AI from Essential AI" workshop at Sri Ramakrishna Engineering College, Coimbatore. Febrauary 23 - 24, 2024. 
++ The "AI Essentials and Fundamentals" workshop at Amrita University, Coimbatore. 20 & 21, April 2022.
 + Organized a Workshop on "DeepChem 2017: Deep Learning & NLP for Computational Chemistry, Biology & Nano-materials", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, December 22-24, 2017.
 + Organized a Workshop on "Blockchain 2017 Workshop: Blockchain and Machine Learning", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday December 16, 2017.
 + Organized a Workshop on "A Refresher experiential course on linear algebra and Optimization for Most Modern Signal processing and pattern classification", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, 25-11,26-11 and 27-11, 2017.
@@ -239,15 +269,39 @@ Python, R, Matlab
   </td>
 </tr>
 <tr>
-  <td class='col-md-2'>Frameworks</td>
+  <td class='col-md-2'>Frameworks & Libraries</td>
   <td markdown="1">
-NumPy, Pandas, SciPy, TensorFlow, DragoNN, DeepChem, NLTK, Scikit Learn, Gensim, Nimfa, Pandas,  Rasa NLU, Rasa Core, Keras, Bottle, Django, Stanford Core NLP and Mallet.
+NumPy, Pandas, SciPy, Scikit-learn, XGBoost, LightGBM, Speechbrain, NLTK, Spacy, Gensim, Pillow, Librosa, Soundfile, OpenCV,  Pytorch, Transformers, PEFT, Accelerate, Fairseq2, Allenai, Speechbrain, OpenAI,  Langchain, LLMLite, vLLM, ONNX, Ray, MLflow, Flask, FastAPI
   </td>
 </tr>
 <tr>
-  <td class='col-md-2'>Systems</td>
+  <td class='col-md-2'>Database</td>
   <td markdown="1">
-Linux, Windows
+MySQL, Postgres, MongoDB, FAISS, Quadrant
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>Visualization</td>
+  <td markdown="1">
+Matplotlib, Seaborn, Plotly, Apache Superset
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>Cloud</td>
+  <td markdown="1">
+AWS (S3, SageMaker, EC2), Azure (AI Services, VMs), GCP (Vertex AI, BigQuery)
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>Annotation & Data Labeling</td>
+  <td markdown="1">
+Label Studio, PWALS
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>OS</td>
+  <td markdown="1">
+Linux, Windows, Mac
   </td>
 </tr>
 <tr>
