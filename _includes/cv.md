@@ -114,15 +114,15 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 <table class="table table-hover">
 
 <tr>
-<td class="col-md-3"><img src="images/publications/distang.png"/></a> </td>
+<td class="col-md-3"><img src="images/publications/distang.png"/></td>
 <td>
     <strong>Disentangled Speech Encoder: A Robust Encoder with Dynamic Adapter for Language Identification</strong><br>
     <strong>Barathi Ganesh HB </strong>, Jairam R, Michal Ptaszynski, Reshma U, Jyothish Lal G, Premjith B <br>
     TidyLang Odyssey 2026<br>
 [<a href='javascript: none'
-    onclick='$("#abs_2").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/SpeechEncoder-TidyLang' target='_blank'>code</a>] <br>
+    onclick='$("#abs_1").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/SpeechEncoder-TidyLang' target='_blank'>code</a>] <br>
     
-<div id="abs_2" style="text-align: justify; display: none">
+<div id="abs_1" style="text-align: justify; display: none">
 Spoken Language Recognition (SLR) in multilingual open set tasks is challenging due to the overlap between linguistic and speaker specific traits. Fine-tuning large foundation models distorts phonetic representations or leads to overfitting, limiting generalization to unseen speakers. To address this, we propose DisentangLID, a robust adaptation method for the TidyLang Challenge integrating a frozen dual branch backbone with a lightweight adapter and adversarial learning to enforce speaker invariant representations. The method aligns semantic representations from Wav2Vec-2.0-BERT with acoustic features from a ResNet34 encoder while preserving pretrained space. A key contribution is a controlled adaptation strategy that prevents feature drift while enabling task specific refinement. Dynamic under sampling and a two stage adversarial scheme improve robustness. The model achieves 96.01 micro and 86.92 macro accuracy on validation, and <strong>90.33</strong> micro, <strong>83.43</strong> macro accuracy on the test set.
 </div>
 
@@ -130,31 +130,47 @@ Spoken Language Recognition (SLR) in multilingual open set tasks is challenging 
 </tr>
 
 <tr>
-<td class="col-md-3"><img src="images/publications/aura-st.png"/></a> </td>
+<td class="col-md-3"><img src="images/publications/aura-st.png"/> </td>
 <td>
     <strong>AURA-ST: Acoustic-Unconstrained Residual Architecture for Speech Translation.</strong><br>
     <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma U, Jairam R <br>
     IWSLT 2026<br>
 [<a href='javascript: none'
-    onclick='$("#abs_1").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/IWSLT-2026-AURA-ST' target='_blank'>code</a>] <br>
+    onclick='$("#abs_2").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/IWSLT-2026-AURA-ST' target='_blank'>code</a>] <br>
     
-<div id="abs_1" style="text-align: justify; display: none">
-We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-text translation submitted to the IWSLT 2026 African-Celtic Track~1. The architecture bypasses traditional cross-attention between audio and text modalities by treating projected acoustic representations as a native token prefix to a frozen large language model. A dual-stream encoder captures linguistic and paralinguistic features via a jointly trained semantic and a paralinguistic encoder. A convolutional subsampler then bridges the modality gap through a $4\times$ temporal compression and a linear projection into the LLM embedding space. Finally, a MLP-targeted Low-Rank Adaptation adapter fine-tunes the frozen Gemma-4-E2B backbone for translation without catastrophic forgetting of base language model knowledge. We further identify and resolve the incompatibility between standard PEFT attention-level adapter injection and the Gemma-4 Per-Layer Embedding architecture that tends to cause gradient isolation. Trained on the IWSLT 2026 Track~1 data covering Hausa, Igbo, and Yoruba, the final system achieves a best proxy teacher-forced SacreBLEU of <strong>91.29</strong> on the validation set at Phase~3, with Phase~1 speech encoder validation loss converging to <strong>0.651</strong>.
+<div id="abs_2" style="text-align: justify; display: none">
+We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-text translation submitted to the IWSLT 2026 African-Celtic Track~1. The architecture bypasses traditional cross-attention between audio and text modalities by treating projected acoustic representations as a native token prefix to a frozen large language model. A dual-stream encoder captures linguistic and paralinguistic features via a jointly trained semantic and a paralinguistic encoder. A convolutional subsampler then bridges the modality gap through a 4x temporal compression and a linear projection into the LLM embedding space. Finally, a MLP-targeted Low-Rank Adaptation adapter fine-tunes the frozen Gemma-4-E2B backbone for translation without catastrophic forgetting of base language model knowledge. We further identify and resolve the incompatibility between standard PEFT attention-level adapter injection and the Gemma-4 Per-Layer Embedding architecture that tends to cause gradient isolation. Trained on the IWSLT 2026 Track 1 data covering Hausa, Igbo, and Yoruba, the final system achieves a best proxy teacher-forced SacreBLEU of <strong>91.29</strong> on the validation set at Phase 3, with Phase~1 speech encoder validation loss converging to <strong>0.651</strong>.
 </div>
 
 </td>
 </tr>
 
 <tr>
-<td class="col-md-3"><img src="images/publications/smm4h-2025.png"/></a> </td>
+<td class="col-md-3"><img src="images/publications/Figure-9.png"/> </td>
+<td>
+    <strong>A Systematic Survey of Modality Fusion Strategies in Multimodal Multilingual Multitask Speech-Text Transformers.</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma Unnikrishnan, Sharmila B., Jairam R. <br>
+    Information Fusion<br>
+[<a href='javascript: none'
+    onclick='$("#abs_3").toggle()'>abs</a>] [pdf]  [code] <br>
+    
+<div id="abs_3" style="text-align: justify; display: none">
+This survey reviews recent advances in Multimodal Multilingual Multitask (M3) transformers that jointly process speech and text, with a focus on their role as information fusion systems. We introduce a six‑dimensional taxonomy covering architecture type, pre‑training objectives, modality integration strategies, training data regimes, language coverage and task support. By using it we organised more than forty representative models ranging from encoder‑only self supervised learning encoders (wav2vec 2.0, XLS‑R) to unified encoder-decoder systems (mSLAM, Mu2SLAM, SeamlessM4T, Whisper) and emerging audio‑aware large language models (SpeechGPT, SALMONN, Qwen‑Audio, SpeechLM). Benchmarks such as LibriSpeech, CoVoST 2, MuST‑C, FLEURS, VoxPopuli, Multilingual LibriSpeech, Common Voice, ML‑SUPERB 2.0, AudioBench, BLASER and HPSU, were used to compare these architectures across speech-text tasks, and quantify where current designs succeed and where they fail, especially on low‑resource and typologically distant languages, code‑switched speech, long‑form audio and paralinguistic cues. We then analyse key limitations like speech-text modality gap, quadratic computational cost, data imbalance, evaluation fragmentation and fairness concerns. It also proposes a research road-map spanning improved cross‑modal alignment, more efficient and modular fusion architectures, stronger low‑resource support and standardised multilingual benchmarks. Overall, the survey provides an architectural and algorithmic perspective on speech-text fusion that outlines concrete steps towards robust, equitable and real‑time multimodal communication systems.
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="col-md-3"><img src="images/publications/smm4h-2025.png"/> </td>
 <td>
     <strong>SMM4H-HeaRD 2025: LLMs in Healthcare Applications.</strong><br>
     <strong>Barathi Ganesh HB </strong>, Anthony Vijay M., Naren Kishor S., Sharmila B., Jairam R., Jyothish Lal G. <br>
-    IWSLT 2026<br>
+    ICWSM 2025<br>
 [<a href='javascript: none'
-    onclick='$("#abs_1").toggle()'>abs</a>] [<a href='https://workshop-proceedings.icwsm.org/pdf/2025_63.pdf' target='_blank'>pdf</a>]  [<a href='https://github.com/rbg-research/SMM4H-2025' target='_blank'>code</a>] <br>
+    onclick='$("#abs_4").toggle()'>abs</a>] [<a href='https://workshop-proceedings.icwsm.org/pdf/2025_63.pdf' target='_blank'>pdf</a>]  [<a href='https://github.com/rbg-research/SMM4H-2025' target='_blank'>code</a>] <br>
     
-<div id="abs_1" style="text-align: justify; display: none">
+<div id="abs_4" style="text-align: justify; display: none">
 This paper presents a lightweight and unified LLM-based system designed for the SMM4H 2025 Task 4: Detection of Insomnia in Clinical Notes. We adopt a single-prompt inference approach using open-source language models constrained to 4B parameters for computational efficiency. On the official test set, RBG-AI achieved an F1-score of 0.9462 (Subtask 1), 0.75 (Subtask 2A), and 0.4631 (Subtask 2B), outperforming baseline metrics. Our results highlight the effectiveness of structured prompting and hybrid rule integration in clinical NLP applications.
 </div>
 
