@@ -226,37 +226,42 @@ This paper presents a lightweight and unified LLM-based system designed for the 
 + "<strong>Introduction to Python</strong>" acquired from DataCamp.
 
 ## <i class="fa fa-chevron-right"></i> International Shared Tasks Participated
-+ African & Celtic Speech-to-Text Translation track (IWSLT-2026)
-+ Speaker-Controlled Language Recognition (Odyssey - 2026 TidyLang)
-+ Audio Encoder Capability Challenge for Large Audio Language Models (InterSpeech-2026 AECC)
-+ Cross-Lingual Speaker Verification (InterSpeech-2026 TidyVoice)
-+ Machine Translation (EMNLP WMT-2025)
-+ Detection of insomnia in clinical notes (SMM4H-HeaRD 2025)
-+ First Security and Privacy Analytics Anti-Phishing Shared Task (IWSPA-AP 2018)
-+ Semantic Evaluation Exercises (SemEval-2018): Affect in Tweets
-+ PAN @ Conference and Labs of Evaluation Forum (PAN-2017): Author Profiling
-+ Forum for Information Retrieval and Evaluation (FIRE-2017): Gender Identification in Russian Texts (RusProfiling)
-+ Forum for Information Retrieval and Evaluation (FIRE-2017) : Information Retrieval from Legal Documents (IRLeD)
-+ 2nd Social Media Mining for Health Application shared task at AMIA 2017
-+ Sentiment Analysis for Indian Languages (Code Mixed) SAIL 2017
-+ The 8th International Cybersecurity  Data Mining Competition (CDMC-2017)
-+ Semantic Evaluation Exercises (SemEval-2016): Semantic Textual Similarity
-+ PAN @ Conference and Labs of Evaluation Forum (PAN-2016): Author Profiling
-+ Forum for Information Retrieval and Evaluation (FIRE-2016): Mixed Script Information Retrieval (MSIR)
-+ Forum for Information Retrieval and Evaluation (FIRE-2016): Consumer Health Information Search (CHIS)
-+ Forum for Information Retrieval and Evaluation (FIRE-2016): Code Mixed Entity Extraction – Indian Languages (CMEE – IL)
-+ Forum for Information Retrieval and Evaluation (FIRE-2014): NER - Named Entity Recognition Indian Languages
-+ Named Entity rEcognition and Linking (#Micropost2015 NEEL): Named Entity Recognition and Linking
++ Machine Translation (<a href='https://www2.statmt.org/wmt26/indic-mt-task.html' target='_blank'>EMNLP WMT-2025</a>)
++ African & Celtic Speech-to-Text Translation track (<a href='https://iwslt.org/2026/african-celtic' target='_blank'>IWSLT-2026</a>)
++ Speaker-Controlled Language Recognition (<a href='https://tidylang2026.github.io/' target='_blank'>Odyssey - 2026 TidyLang</a>)
++ Audio Encoder Capability Challenge for Large Audio Language Models (<a href='https://dataoceanai.github.io/Interspeech2026-Audio-Encoder-Challenge/' target='_blank'>InterSpeech-2026 AECC</a>)
++ Cross-Lingual Speaker Verification (<a href='https://tidyvoice2026.github.io/' target='_blank'>InterSpeech-2026 TidyVoice</a>)
++ Multilingual Automatic Detection of Reclamation of Slurs in the LGBTQ+ Context (<a href='https://multipride-evalita.github.io/' target='_blank'>MultiPRIDE</a>)
++ Fallacy Detection in Italian Social Media Texts(<a href='https://sites.google.com/fbk.eu/fadeit2026' target='_blank'>FadeIT</a>)
++ Machine Translation (<a href='https://www2.statmt.org/wmt25/indic-mt-task.html' target='_blank'>EMNLP WMT-2025</a>)
++ Detection of insomnia in clinical notes (<a href='https://healthlanguageprocessing.org/smm4h-2025/' target='_blank'>SMM4H-HeaRD 2025</a>)
++ First Security and Privacy Analytics Anti-Phishing Shared Task (<a href='https://dasavisha.github.io/IWSPA-sharedtask/' target='_blank'>IWSPA-AP 2018</a>)
++ Semantic Evaluation Exercises: Affect in Tweets (<a href='https://aclanthology.org/S18-1001/' target='_blank'>SemEval-2018</a>)
++ PAN @ Conference and Labs of Evaluation Forum: Author Profiling (<a href='https://pan.webis.de/clef17/pan17-web/author-profiling.html' target='_blank'>PAN-2017</a>)
++ Forum for Information Retrieval and Evaluation (FIRE-2017): Gender Identification in Russian Texts (<a href='https://fire.irsi.org.in/fire/2017/home' target='_blank'>RusProfiling</a>)
++ Forum for Information Retrieval and Evaluation (FIRE-2017): Information Retrieval from Legal Documents (<a href='https://fire.irsi.org.in/fire/2017/home' target='_blank'>IRLeD<a>)
++ 2nd Social Media Mining for Health Application shared task (<a href='https://healthlanguageprocessing.org/sharedtask2/' target='_blank'>AMIA 2017</a>)
++ Sentiment Analysis for Indian Languages: Code Mixed (<a href='https://arxiv.org/abs/1803.06745' target='_blank'>SAIL 2017</a>)
++ The 8th International Cybersecurity Data Mining Competition (<a href='https://archive.csmining.org/' target='_blank'>CDMC-2017</a>)
++ Semantic Evaluation Exercises: Semantic Textual Similarity (<a href='https://alt.qcri.org/semeval2016/index.php?id=tasks' target='_blank'>SemEval-2016</a>)
++ PAN @ Conference and Labs of Evaluation Forum: Author Profiling (<a href='https://pan.webis.de/clef16/pan16-web/author-profiling.html' target='_blank'>PAN-2016</a>)
++ Forum for Information Retrieval and Evaluation (FIRE-2016): Mixed Script Information Retrieval (<a href='https://msir2016.github.io/' target='_blank'>MSIR</a>)
++ Forum for Information Retrieval and Evaluation (FIRE-2016): Consumer Health Information Search (<a href='https://fire.irsi.org.in/fire/2016/home' target='_blank'>CHIS</a>)
++ Forum for Information Retrieval and Evaluation (FIRE-2016): Code Mixed Entity Extraction – Indian Languages (<a href='https://www.au-kbc.org/nlp/CMEE-FIRE2016/' target='_blank'>CMEE – IL</a>)
++ Forum for Information Retrieval and Evaluation (FIRE-2014): Named Entity Recognition Indian Languages (<a href='https://au-kbc.org/nlp/NER-FIRE2013/' target='_blank'>NER</a>)
++ Named Entity rEcognition and Linking: Named Entity Recognition and Linking (<a href='https://ceur-ws.org/Vol-1395/microposts2015_neel-challenge-report/' target='_blank'>#Micropost2015 NEEL</a>)
 
 
 ## <i class="fa fa-chevron-right"></i> Invited Talks
 + Topic: "<strong>Data Preprocessing and Feature Engineering: The Key to Successful Models</strong>" in the Faculty Development Programme at Dr. B.R. Ambedkar Institute of Technology Sri Vijyapuram Andaman & Nicobar Islands. 20, Jan 2025.
-+ Topic: "<strong>Jailbreaking LLM</strong>" at Amrita University, Coimbatore. 18, October 2024. 
-+ Topic: "<strong>Natural Language Processing with Deep Learning</strong>" in the Faculty Development Program (FDP) at Vidya Academy of Science & Technology, Thrissur. 20, Jan 2017.
++ Topic: "<strong>Jailbreaking LLM</strong>" at Amrita University, Coimbatore. 18, October 2024.
++ Topic: "<strong>Cyber Security in Industry 4.0</strong>" in TEQIP-III Sponsored Workshop on <a href='https://github.com/BarathiGanesh-HB/NITK-CyberSecurity_Workshop' target='_blank'>"Deep Learning for Big Data and Cyber Security Applications"</a> at National Institute of Technology, Surathkal, July 2019.
++ Topic: "<strong>Workshop on Machine Learning</strong>" in <a href='https://github.com/BarathiGanesh-HB/NCRTCC-2018_ML_Workshop' target='_blank'>National Conference on Recent Trends in Computing and Communications NCRTCC'18 </a> at Adi Shankara Institute of Engineering and Technology, February 2018. 
++ Topic: "<strong>Natural Language Processing with Deep Learning</strong>" in the <a href='https://github.com/BarathiGanesh-HB/Vidhya-Academy-Seminar' target='_blank'>Faculty Development Program (FDP)</a> at Vidya Academy of Science & Technology, Thrissur. 20, Jan 2017.
 + Topic: "<strong>Deep Learning with Python</strong>" in the Faculty Development Program (FDP) at Mepco Schlenk Engineering College, Sivakasi. 16-17, Jan 2017.
 + Topic: "<strong>Dyanamic Mode Decomposition</strong>"  from scratch . In the workshop on <a href='https://barathiganesh-hb.github.io/cen-ddm2017/'>Data -Driven Modelling 2017</a> at Computational Engineering and Networking (CEN), Amrita School of Engineering, Coimbatore. 8-9, Jan 2017.
-+ Topic: "<strong>Deep Learning for BioInformatics</strong>"  in the workshop on "DeepChem 2017: Deep Learning & NLP for Computational Chemistry, Biology & Nano-materials", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, December 22-24, 2017.
-+ Topic: "<strong>Dynamic Mode Decomposition in Epidemiology</strong>" in the Workshop on "A Refresher experiential course on linear algebra and Optimization for Most Modern Signal processing and pattern classification", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, 25-11,26-11 and 27-11, 2017.
++ Topic: "<strong>Deep Learning for BioInformatics</strong>"  in the workshop on "<a href='https://github.com/BarathiGanesh-HB/DeepChem-Workshop' target='_blank'>DeepChem 2017: Deep Learning & NLP for Computational Chemistry, Biology & Nano-materials"</a>, Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, December 22-24, 2017.
++ Topic: "<strong>Dynamic Mode Decomposition in Epidemiology</strong>" in the Workshop on "<a href='https://github.com/BarathiGanesh-HB/dmd-2017-tutorial' target='_blank'>A Refresher experiential course on linear algebra and Optimization for Most Modern Signal processing and pattern classification</a>", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, 25-11,26-11 and 27-11, 2017.
 + Topic: "<strong>Natural Language Processing for Cyber Security</strong>"  in the workshop on "AISec 2017 Workshop: Modern Artificial Intelligence (AI) and Natural Language Processing (NLP) Techniques for Cyber Security", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday, October 28, 2017.
 + Topic: "<strong>A Journey to Text Analytics and Recent Trends in Text Analytics</strong>",  TEQIP sponsored Faculty Development Program on "Research Directions in Data and Text Mining", organized by Government Engineering College, Idukki on January 2016.
 + Topic: "<strong>Advanced Analytics in Text and Data Mining</strong>",  Tata Consultancy Services sponsored Faculty Development Program on "Text and Data Mining" held at Tata Consultancy Services, Kochi on April 2016.
@@ -267,14 +272,15 @@ This paper presents a lightweight and unified LLM-based system designed for the 
 + "Generative AI" workshop for Advanced Data Science Students at St Joseph's College Of Engineering, Chennai. 01 to 07, April 2025.
 + "Generative AI from Essential AI" workshop at Sri Ramakrishna Engineering College, Coimbatore. Febrauary 23 - 24, 2024. 
 + The "AI Essentials and Fundamentals" workshop at Amrita University, Coimbatore. 20 & 21, April 2022.
-+ Organized a Workshop on "DeepChem 2017: Deep Learning & NLP for Computational Chemistry, Biology & Nano-materials", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, December 22-24, 2017.
-+ Organized a Workshop on "Blockchain 2017 Workshop: Blockchain and Machine Learning", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday December 16, 2017.
-+ Organized a Workshop on "A Refresher experiential course on linear algebra and Optimization for Most Modern Signal processing and pattern classification", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, 25-11,26-11 and 27-11, 2017.
-+ Organized a Workshop on "DeepSci 2017 Workshop: Deep Learning for Healthcare and Financial Data Analytics", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday, November 11, 2017.
-+ Organized a Workshop on "AISec 2017 Workshop: Modern Artificial Intelligence (AI) and Natural Language Processing (NLP) Techniques for Cyber Security", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday, October 28, 2017.
-+ Advisory Committee member of International Shared Task “Detecting Paraphrases in Indian Languages (DPIL)”, Conducted as a part of Forum for Information Retrieval and Evaluation – 2016 by Amrita Vishwa Vidyapeetham University.
-+ Advisory Committee member of International Shared Task & Workshop on  “Machine Translation system in Indian Languages (MTIL)”, Conducted by Amrita Vishwa Vidyapeetham University.
-+ Session Chair member of International Shared Task on  “Indian Native Language Identification (INLI PAN @ FIRE 2017)”, Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University.
++ Conducted International Shared Task "Information Extractor for Conversational Systems in Indian Languages (IECSIL)" at <a href='https://fire.irsi.org.in/fire/2018/home' target='_blank'>Forum for Information Retrieval Evaluation</a> 2018.
++ Organized a Workshop on "<a href='https://github.com/BarathiGanesh-HB/cen-deepchem2017/blob/master/index.md' target='_blank'>DeepChem 2017: Deep Learning & NLP for Computational Chemistry, Biology & Nano-materials</a>", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, December 22-24, 2017.
++ Organized a Workshop on "<a href='https://github.com/BarathiGanesh-HB/cen-bcml2017/blob/master/index.md' target='_blank'>Blockchain 2017 Workshop: Blockchain and Machine Learning</a>", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday December 16, 2017.
++ Organized a Workshop on "<a href='https://github.com/BarathiGanesh-HB/cen-msp2017/blob/master/index.md' target='_blank'>A Refresher experiential course on linear algebra and Optimization for Most Modern Signal processing and pattern classification</a>", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, 25-11,26-11 and 27-11, 2017.
++ Organized a Workshop on "<a href='https://github.com/BarathiGanesh-HB/cen-deepsci2017/blob/master/index.md' target='_blank'>DeepSci 2017 Workshop: Deep Learning for Healthcare and Financial Data Analytics</a>", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday, November 11, 2017.
++ Organized a Workshop on "<a href='https://github.com/BarathiGanesh-HB/cen-aisec2017/blob/master/index.md' target='_blank'>AISec 2017 Workshop: Modern Artificial Intelligence (AI) and Natural Language Processing (NLP) Techniques for Cyber Security</a>", Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University, Saturday, October 28, 2017.
++ Advisory Committee member of International Shared Task “<a href='https://nlp.amrita.edu/dpil_cen/' target='_blank'>Detecting Paraphrases in Indian Languages (DPIL)</a>”, Conducted as a part of Forum for Information Retrieval and Evaluation – 2016 by Amrita Vishwa Vidyapeetham University.
++ Advisory Committee member of International Shared Task & Workshop on  “<a href='https://www.linkedin.com/pulse/workshop-machine-translation-indian-languages-mtil-barathi-ganesh' target='_blank'>Machine Translation system in Indian Languages (MTIL)</a>”, Conducted by Amrita Vishwa Vidyapeetham University.
++ Session Chair member of International Shared Task on  “<a href='https://ir.webis.de/anthology/2017.fire_conference-2017w.29/' target='_blank'>Indian Native Language Identification (INLI PAN @ FIRE 2017)</a>”, Conducted by the Department of Computational Engineering and Networking, Amrita Vishwa Vidyapeetham University.
 
 ## <i class="fa fa-chevron-right"></i> Skills
 <table class="table table-hover">
