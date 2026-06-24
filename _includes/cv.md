@@ -149,10 +149,10 @@ We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-te
 <td class="col-md-3"><img src="images/publications/Figure-9.png"/> </td>
 <td>
     <strong>A Systematic Survey of Modality Fusion Strategies in Multimodal Multilingual Multitask Speech-Text Transformers.</strong><br>
-    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma Unnikrishnan, Sharmila B., Jairam R. <br>
+    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma Unnikrishnan, Jairam R, Meenakshi <br>
     Information Fusion<br>
 [<a href='javascript: none'
-    onclick='$("#abs_3").toggle()'>abs</a>] [pdf]  [code] <br>
+    onclick='$("#abs_3").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/M3-Transformers-Survey' target='_blank'>Materials</a>] <br>
     
 <div id="abs_3" style="text-align: justify; display: none">
 This survey reviews recent advances in Multimodal Multilingual Multitask (M3) transformers that jointly process speech and text, with a focus on their role as information fusion systems. We introduce a six‑dimensional taxonomy covering architecture type, pre‑training objectives, modality integration strategies, training data regimes, language coverage and task support. By using it we organised more than forty representative models ranging from encoder‑only self supervised learning encoders (wav2vec 2.0, XLS‑R) to unified encoder-decoder systems (mSLAM, Mu2SLAM, SeamlessM4T, Whisper) and emerging audio‑aware large language models (SpeechGPT, SALMONN, Qwen‑Audio, SpeechLM). Benchmarks such as LibriSpeech, CoVoST 2, MuST‑C, FLEURS, VoxPopuli, Multilingual LibriSpeech, Common Voice, ML‑SUPERB 2.0, AudioBench, BLASER and HPSU, were used to compare these architectures across speech-text tasks, and quantify where current designs succeed and where they fail, especially on low‑resource and typologically distant languages, code‑switched speech, long‑form audio and paralinguistic cues. We then analyse key limitations like speech-text modality gap, quadratic computational cost, data imbalance, evaluation fragmentation and fairness concerns. It also proposes a research road-map spanning improved cross‑modal alignment, more efficient and modular fusion architectures, stronger low‑resource support and standardised multilingual benchmarks. Overall, the survey provides an architectural and algorithmic perspective on speech-text fusion that outlines concrete steps towards robust, equitable and real‑time multimodal communication systems.
