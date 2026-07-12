@@ -136,9 +136,9 @@ This paper details the  submission of team TIP-RBG-AI for the WMT26 Indic-MT sha
     <strong>Barathi Ganesh HB </strong>, Jairam R, Michal Ptaszynski, Reshma U, Jyothish Lal G, Premjith B <br>
     TidyLang Odyssey 2026<br>
 [<a href='javascript: none'
-    onclick='$("#abs_1").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/SpeechEncoder-TidyLang' target='_blank'>code</a>] <br>
+    onclick='$("#abs_n").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/SpeechEncoder-TidyLang' target='_blank'>code</a>] <br>
     
-<div id="abs_1" style="text-align: justify; display: none">
+<div id="abs_n" style="text-align: justify; display: none">
 Spoken Language Recognition (SLR) in multilingual open set tasks is challenging due to the overlap between linguistic and speaker specific traits. Fine-tuning large foundation models distorts phonetic representations or leads to overfitting, limiting generalization to unseen speakers. To address this, we propose DisentangLID, a robust adaptation method for the TidyLang Challenge integrating a frozen dual branch backbone with a lightweight adapter and adversarial learning to enforce speaker invariant representations. The method aligns semantic representations from Wav2Vec-2.0-BERT with acoustic features from a ResNet34 encoder while preserving pretrained space. A key contribution is a controlled adaptation strategy that prevents feature drift while enabling task specific refinement. Dynamic under sampling and a two stage adversarial scheme improve robustness. The model achieves 96.01 micro and 86.92 macro accuracy on validation, and <strong>90.33</strong> micro, <strong>83.43</strong> macro accuracy on the test set.
 </div>
 
