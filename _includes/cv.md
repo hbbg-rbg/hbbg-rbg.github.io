@@ -4,11 +4,11 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 ## <i class="fa fa-chevron-right"></i> On-going Research
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'> May 2025</td>
-  <td><strong>WMT-2026:</strong> Experimenting M3LM TextDecoder in Indic Machine Translation Shared Task. It focuses on low-resource Indic languages from diverse language families. The focus will be on North Eastern languages like Assamese (State: Assam), Bodo (State: Assam), Mizo (State: Mizoram), Khasi (State: Meghalaya), Manipuri (State: Manipur), Kokborok (State: Tripura) and Nyishi (State: Arunachal Pradesh).</td>
+  <td class='col-md-3'> May 2026</td>
+  <td><strong>WMT-2026:</strong> Experimenting TextDecoder in Indic Machine Translation Shared Task. It focuses on low-resource Indic languages from diverse language families. The focus will be on North Eastern languages like Assamese (State: Assam), Bodo (State: Assam), Mizo (State: Mizoram), Khasi (State: Meghalaya), Manipuri (State: Manipur), Kokborok (State: Tripura) and Nyishi (State: Arunachal Pradesh).</td>
 </tr>
 <tr>
-  <td class='col-md-3'> March 2025</td>
+  <td class='col-md-3'> March 2026</td>
   <td><strong>M3LM-Indic Corpus:</strong> Developing a 50K+ hour open corpus covering 23 languages, complete with emotion annotations and gender balancing, utilizing weak supervision for low-resource languages.</td>
 </tr>
 <tr>
@@ -114,6 +114,22 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 <table class="table table-hover">
 
 <tr>
+<td class="col-md-3"><img src="images/publications/wmt2026.png"/></td>
+<td>
+    <strong>Overcoming Orthographic Discrepancies via Algorithmic Translinear Pipelines and Phylogenetic Script Mapping</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Meenakshi, Jairam R <br>
+    WMT EMNLP 2026<br>
+[<a href='javascript: none'
+    onclick='$("#abs_1").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/EMNLP-2026' target='_blank'>code</a>] <br>
+    
+<div id="abs_1" style="text-align: justify; display: none">
+This paper details the  submission of team TIP-RBG-AI for the WMT26 Indic-MT shared task. Addressing severe data sparsity, unstandardized orthographies, and script-level discrepancies across eleven Indic languages, we introduce a robust, resource-agnostic cross-lingual framework. Rather than relying on standard downstream parameter fine-tuning, our methodology optimizes zero-shot inference topologies across three massively multilingual machine translation architectures: NLLB-200, MADLAD-400, and IndicTrans2. To systematically resolve vocabulary mismatch and tokenizer fragmentation, we implement a three-tiered preprocessing pipeline comprising baseline untuned direct inference for native scripts, translinear normalization via algorithmic back-transliteration for Romanized textual representations, and phylogenetic script mapping for undocumented, scriptless vernaculars. Empirical evaluations demonstrate that structurally aligning orthographic decoding environments and exploiting cross-lingual family networks substantially enriches semantic fidelity. Without executing a single downstream parameter update, our purely zero-shot framework secured multiple podium placements, including second-place finishes in the Bodo and Manipuri (Meitei Mayek) to English tracks, validating the immense potential of frontend representation alignment in extreme low-resource translation.
+</div>
+
+</td>
+</tr>
+
+<tr>
 <td class="col-md-3"><img src="images/publications/distang.png"/></td>
 <td>
     <strong>Disentangled Speech Encoder: A Robust Encoder with Dynamic Adapter for Language Identification</strong><br>
@@ -136,7 +152,7 @@ Spoken Language Recognition (SLR) in multilingual open set tasks is challenging 
     <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma U, Jairam R <br>
     IWSLT 2026<br>
 [<a href='javascript: none'
-    onclick='$("#abs_2").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/IWSLT-2026-AURA-ST' target='_blank'>code</a>] <br>
+    onclick='$("#abs_2").toggle()'>abs</a>] [<a href='https://aclanthology.org/2026.iwslt-1.28/' target='_blank'>pdf</a>]  [<a href='https://github.com/rbg-research/IWSLT-2026-AURA-ST' target='_blank'>code</a>] <br>
     
 <div id="abs_2" style="text-align: justify; display: none">
 We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-text translation submitted to the IWSLT 2026 African-Celtic Track~1. The architecture bypasses traditional cross-attention between audio and text modalities by treating projected acoustic representations as a native token prefix to a frozen large language model. A dual-stream encoder captures linguistic and paralinguistic features via a jointly trained semantic and a paralinguistic encoder. A convolutional subsampler then bridges the modality gap through a 4x temporal compression and a linear projection into the LLM embedding space. Finally, a MLP-targeted Low-Rank Adaptation adapter fine-tunes the frozen Gemma-4-E2B backbone for translation without catastrophic forgetting of base language model knowledge. We further identify and resolve the incompatibility between standard PEFT attention-level adapter injection and the Gemma-4 Per-Layer Embedding architecture that tends to cause gradient isolation. Trained on the IWSLT 2026 Track 1 data covering Hausa, Igbo, and Yoruba, the final system achieves a best proxy teacher-forced SacreBLEU of <strong>91.29</strong> on the validation set at Phase 3, with Phase~1 speech encoder validation loss converging to <strong>0.651</strong>.
@@ -226,7 +242,7 @@ This paper presents a lightweight and unified LLM-based system designed for the 
 + "<strong>Introduction to Python</strong>" acquired from DataCamp.
 
 ## <i class="fa fa-chevron-right"></i> International Shared Tasks Participated
-+ Machine Translation (<a href='https://www2.statmt.org/wmt26/indic-mt-task.html' target='_blank'>EMNLP WMT-2025</a>)
++ Machine Translation (<a href='https://www2.statmt.org/wmt26/indic-mt-task.html' target='_blank'>EMNLP WMT-2026</a>)
 + African & Celtic Speech-to-Text Translation track (<a href='https://iwslt.org/2026/african-celtic' target='_blank'>IWSLT-2026</a>)
 + Speaker-Controlled Language Recognition (<a href='https://tidylang2026.github.io/' target='_blank'>Odyssey - 2026 TidyLang</a>)
 + Audio Encoder Capability Challenge for Large Audio Language Models (<a href='https://dataoceanai.github.io/Interspeech2026-Audio-Encoder-Challenge/' target='_blank'>InterSpeech-2026 AECC</a>)
