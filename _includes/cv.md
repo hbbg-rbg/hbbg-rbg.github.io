@@ -4,16 +4,12 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 ## <i class="fa fa-chevron-right"></i> On-going Research
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'> May 2026</td>
-  <td><strong>WMT-2026:</strong> Experimenting TextDecoder in Indic Machine Translation Shared Task. It focuses on low-resource Indic languages from diverse language families. The focus will be on North Eastern languages like Assamese (State: Assam), Bodo (State: Assam), Mizo (State: Mizoram), Khasi (State: Meghalaya), Manipuri (State: Manipur), Kokborok (State: Tripura) and Nyishi (State: Arunachal Pradesh).</td>
+  <td class='col-md-3'> From May 2026</td>
+  <td><strong>M3LM-Corpus:</strong> We are curating a massive benchmarking suite compiling open-source datasets alongside a in-house corpus derived from spontaneous YouTube audio. To prevent anomalies and mismatches from corrupting the instruction tuning phase, we implement a 3 stage validation pipeline: <strong>Stage 1-</strong> Margin-based LID pre-filtering and exact sequence-length alignment heuristics; <strong>Stage 2-</strong> Semantic Cross-Lingual Similarity Search (CSLS) using a 1024-dimensional embedding space to eliminate misaligned audio-text concepts; and <strong>Stage 3-</strong> Deduplication and demographic bias auditing to ensure mathematically balanced representation across gender, language, and regional accents.</td>
 </tr>
 <tr>
-  <td class='col-md-3'> March 2026</td>
-  <td><strong>M3LM-Indic Corpus:</strong> Developing a 50K+ hour open corpus covering 23 languages, complete with emotion annotations and gender balancing, utilizing weak supervision for low-resource languages.</td>
-</tr>
-<tr>
-  <td class='col-md-3'> October 2025</td>
-  <td><strong>M3LM-Indic:</strong> A bias-aware, unified Multimodal, Multilingual, and Multitask (M3) Transformer for English and all 22 scheduled Indian languages under India's Constitution. It addresses the low-resource multilingual AI scaling crisis through depth-first specialization and para-linguistic bias-aware pre-training. </td>
+  <td class='col-md-3'> From October 2026</td>
+  <td><strong>M3LM-SpeechEncoder:</strong> Utilizes a dual-stream architecture: <strong>Semantic Stream-</strong> Utilizes w2v-BERT 2.0 to extract high-level linguistic properties at 40ms intervals, passing through Product Quantization (102,400 discrete states) for robust phonetic alignment without parameter bloat. <strong>Acoustic Stream-</strong> Utilizes ReDimNet-B3 with structural extraction to capture utterance-level biometrics. Attentive Statistics Pooling (ASP) applies to yield a rich 2048-dimensional representation [μ, σ]. These streams are fused via a Gated Cross-Modal Fusion layer. We implement explicit TSLM/RALM gradient routing, ensuring that auxiliary AAM-Softmax biometric losses (speaker, gender, language) cannot retroactively destroy the phonetic codebook, and semantic MLM cannot smooth out the acoustic hypersphere.</td>
 </tr>
 
 </table>
@@ -114,6 +110,38 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 <table class="table table-hover">
 
 <tr>
+<td class="col-md-3"><img src="images/publications/survey-m3lm.png"/></td>
+<td>
+    <strong>A Systematic Survey of Modality Fusion Strategies in Multimodal Multilingual Multitask Speech-Text Transformers</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma Unnikrishnan, Meenakshi, Jairam R <br>
+    Information Fusion<br>
+[<a href='javascript: none'
+    onclick='$("#abs_6").toggle()'>abs</a>] [pdf]  [code] <br>
+    
+<div id="abs_6" style="text-align: justify; display: none">
+This survey reviews recent advances in Multimodal Multilingual Multitask transformers that jointly process speech and text, with a focus on their role as information fusion systems. We introduce a six‑dimensional taxonomy covering architecture type, pre‑training objectives, modality integration strategies, training data regimes, language coverage and task support. By using it we organised more than forty representative models, ranging from encoder‑only self supervised learning encoders (wav2vec 2.0, XLS‑R) to unified encoder-decoder systems (mSLAM, Mu2SLAM, SeamlessM4T, Whisper) and emerging audio‑aware large language models (SpeechGPT, SALMONN, Qwen‑Audio, SpeechLM). Benchmarks such as LibriSpeech, CoVoST 2, MuST‑C, FLEURS, VoxPopuli, Multilingual LibriSpeech, Common Voice, ML‑SUPERB 2.0, AudioBench, BLASER and HPSU, were used to compare these architectures across speech-text tasks, and quantify where current designs succeed and where they fail, especially on low‑resource and typologically distant languages, code‑switched speech, long‑form audio and paralinguistic cues. We then analyse key limitations like speech-text modality gap, quadratic computational cost, data imbalance, evaluation fragmentation and fairness concerns. It also proposes a research road-map spanning improved cross‑modal alignment, more efficient and modular fusion architectures, stronger low‑resource support and standardised multilingual benchmarks. Overall, the survey provides an architectural and algorithmic perspective on speech-text fusion that outlines concrete steps towards robust, equitable and real‑time multimodal communication systems.
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="col-md-3"><img src="images/publications/survey-m3lm-indic.png"/></td>
+<td>
+    <strong>Multimodal Solutions in Low-Resource Indian Code-Mixing: A Systematic Survey of Speech-Text Transformers</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Jairam R, Meenakshi, Reshma Unnikrishnan <br>
+    Engineering Applications of Artificial Intelligence<br>
+[<a href='javascript: none'
+    onclick='$("#abs_7").toggle()'>abs</a>] [pdf]  [code] <br>
+    
+<div id="abs_7" style="text-align: justify; display: none">
+Code-mixing, such as the blending of Hinglish and Tanglish, is a prevalent communication method in multilingual countries like India, but it suffers from severe data scarcity and linguistic challenges like non-standard grammar and scripts. Since the traditional unimodal models fail to resolve the continuous nature of speech and the discreteness of text in these environments. This study explores Multimodal Multilingual Multitask transformers to explicitly bridge the gap between artificial intelligence theory and practical engineering. The primary contribution in AI is the formulation of a novel six-dimensional taxonomy encompassing architectural parameters, pre-training methods, multimodal approaches, multilingualism, datasets, and tasks to systematically evaluate these advanced speech-text transformers. The primary application in engineering involves analysing these state-of-the-art fusion methods to build and optimize robust natural language processing pipelines for low-resource Indian dialects. By benchmarking these AI architectures across seven common code-mixed NLP tasks, this study identifies critical system vulnerabilities, including script biases and tokenization failures during intra-sentential language switches. Ultimately, this analysis provides an engineering roadmap for developing efficient cross-modal fusion mechanisms and code-switch-aware pre-training methods optimized for real-world deployment.
+</div>
+
+</td>
+</tr>
+
+<tr>
 <td class="col-md-3"><img src="images/publications/wmt2026.png"/></td>
 <td>
     <strong>Overcoming Orthographic Discrepancies via Algorithmic Translinear Pipelines and Phylogenetic Script Mapping</strong><br>
@@ -156,22 +184,6 @@ Spoken Language Recognition (SLR) in multilingual open set tasks is challenging 
     
 <div id="abs_2" style="text-align: justify; display: none">
 We present AURA-ST, a three-stage modular pipeline for low-resource speech-to-text translation submitted to the IWSLT 2026 African-Celtic Track~1. The architecture bypasses traditional cross-attention between audio and text modalities by treating projected acoustic representations as a native token prefix to a frozen large language model. A dual-stream encoder captures linguistic and paralinguistic features via a jointly trained semantic and a paralinguistic encoder. A convolutional subsampler then bridges the modality gap through a 4x temporal compression and a linear projection into the LLM embedding space. Finally, a MLP-targeted Low-Rank Adaptation adapter fine-tunes the frozen Gemma-4-E2B backbone for translation without catastrophic forgetting of base language model knowledge. We further identify and resolve the incompatibility between standard PEFT attention-level adapter injection and the Gemma-4 Per-Layer Embedding architecture that tends to cause gradient isolation. Trained on the IWSLT 2026 Track 1 data covering Hausa, Igbo, and Yoruba, the final system achieves a best proxy teacher-forced SacreBLEU of <strong>91.29</strong> on the validation set at Phase 3, with Phase~1 speech encoder validation loss converging to <strong>0.651</strong>.
-</div>
-
-</td>
-</tr>
-
-<tr>
-<td class="col-md-3"><img src="images/publications/Figure-9.png"/> </td>
-<td>
-    <strong>A Systematic Survey of Modality Fusion Strategies in Multimodal Multilingual Multitask Speech-Text Transformers.</strong><br>
-    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma Unnikrishnan, Jairam R, Meenakshi <br>
-    Information Fusion<br>
-[<a href='javascript: none'
-    onclick='$("#abs_3").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/M3-Transformers-Survey' target='_blank'>Materials</a>] <br>
-    
-<div id="abs_3" style="text-align: justify; display: none">
-This survey reviews recent advances in Multimodal Multilingual Multitask (M3) transformers that jointly process speech and text, with a focus on their role as information fusion systems. We introduce a six‑dimensional taxonomy covering architecture type, pre‑training objectives, modality integration strategies, training data regimes, language coverage and task support. By using it we organised more than forty representative models ranging from encoder‑only self supervised learning encoders (wav2vec 2.0, XLS‑R) to unified encoder-decoder systems (mSLAM, Mu2SLAM, SeamlessM4T, Whisper) and emerging audio‑aware large language models (SpeechGPT, SALMONN, Qwen‑Audio, SpeechLM). Benchmarks such as LibriSpeech, CoVoST 2, MuST‑C, FLEURS, VoxPopuli, Multilingual LibriSpeech, Common Voice, ML‑SUPERB 2.0, AudioBench, BLASER and HPSU, were used to compare these architectures across speech-text tasks, and quantify where current designs succeed and where they fail, especially on low‑resource and typologically distant languages, code‑switched speech, long‑form audio and paralinguistic cues. We then analyse key limitations like speech-text modality gap, quadratic computational cost, data imbalance, evaluation fragmentation and fairness concerns. It also proposes a research road-map spanning improved cross‑modal alignment, more efficient and modular fusion architectures, stronger low‑resource support and standardised multilingual benchmarks. Overall, the survey provides an architectural and algorithmic perspective on speech-text fusion that outlines concrete steps towards robust, equitable and real‑time multimodal communication systems.
 </div>
 
 </td>
