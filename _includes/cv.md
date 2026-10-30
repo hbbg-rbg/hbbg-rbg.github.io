@@ -1,15 +1,15 @@
-I build bias-aware, edge-ready speech and language models for under-represented languages. Currently a Ph.D. candidate at the Kitami Institute of Technology , I am developing unified Multimodal, Multilingual, and Multitask (M3) transformers to ensure AI systems serve diverse linguistic identities with demographic fairness and structural equity.
+Doctoral Researcher investigating unified <strong>Multimodal, Multilingual, and Multitask (M3) Language Models (M3LM)</strong>, bridging a decade of production AI engineering with foundational speech-text representation learning. My research resolves the topological conflict between continuous acoustic paralinguistics and discrete semantic tokens across 100+ global and underrepresented languages, ensuring AI systems serve diverse linguistic identities with demographic fairness, structural equity, and hardware-level efficiency.
 
 
 ## <i class="fa fa-chevron-right"></i> On-going Research
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'> From May 2026</td>
-  <td><strong>M3LM-Corpus:</strong> We are curating a massive benchmarking suite compiling open-source datasets alongside a in-house corpus derived from spontaneous YouTube audio. To prevent anomalies and mismatches from corrupting the instruction tuning phase, we implement a 3 stage validation pipeline: <strong>Stage 1-</strong> Margin-based LID pre-filtering and exact sequence-length alignment heuristics; <strong>Stage 2-</strong> Semantic Cross-Lingual Similarity Search (CSLS) using a 1024-dimensional embedding space to eliminate misaligned audio-text concepts; and <strong>Stage 3-</strong> Deduplication and demographic bias auditing to ensure mathematically balanced representation across gender, language, and regional accents.</td>
+  <td class='col-md-3'><strong>M3LM-Corpus</strong></td>
+  <td>Working on the aggregation, weak-supervision pseudo-labeling, and quantitative semantic-embedding validation of a massive, multilingual speech-text corpus spanning 100+ global languages (integrating 30+ open datasets across ASR, S2TT, TTS, LID, SID, emotion, sentiment, and dialect tasks) to train the full generative M3LM foundation model. To prevent anomalies and mismatches from corrupting the instruction tuning phase, we implement a 3 stage validation pipeline: <strong>Stage 1-</strong> Margin-based LID pre-filtering and exact sequence-length alignment heuristics, Nemo Forced Aligner; <strong>Stage 2-</strong> Semantic Cross-Lingual Similarity Search (CSLS) using a 1024-dimensional embedding space to eliminate misaligned audio-text concepts; and <strong>Stage 3-</strong> Deduplication and demographic bias auditing to ensure mathematically balanced representation across gender, language, and regional accents.</td>
 </tr>
 <tr>
-  <td class='col-md-3'> From October 2026</td>
-  <td><strong>M3LM-SpeechEncoder:</strong> Utilizes a dual-stream architecture: <strong>Semantic Stream-</strong> Utilizes w2v-BERT 2.0 to extract high-level linguistic properties at 40ms intervals, passing through Product Quantization (102,400 discrete states) for robust phonetic alignment without parameter bloat. <strong>Acoustic Stream-</strong> Utilizes ReDimNet-B3 with structural extraction to capture utterance-level biometrics. Attentive Statistics Pooling (ASP) applies to yield a rich 2048-dimensional representation [μ, σ]. These streams are fused via a Gated Cross-Modal Fusion layer. We implement explicit TSLM/RALM gradient routing, ensuring that auxiliary AAM-Softmax biometric losses (speaker, gender, language) cannot retroactively destroy the phonetic codebook, and semantic MLM cannot smooth out the acoustic hypersphere.</td>
+  <td class='col-md-3'><strong>M3LM</strong></td>
+  <td>Interfacing autoregressive Text LLMs directly with the frozen M3LM-SpeechEncoder dual-prefix bridge (compressing frame-level phonetic tokens alongside explicit language, speaker, gender, and age vectors via MLP-targeted LoRA without Per-Layer Embedding gradient isolation) and training on M3LM-Corpus.</td>
 </tr>
 
 </table>
@@ -23,7 +23,7 @@ I build bias-aware, edge-ready speech and language models for under-represented 
     <td>
         <strong>Ph.D. in Multimodal AI</strong>
         <br>
-       Text Information Processing Lab, Department of Co-creative Engineering, Kitami Institute of Technology, Japan.
+       Text Information Processing Lab, Information and Communication Engineering, Kitami Institute of Technology, Japan.
     </td>
   </tr>
   <tr>
@@ -39,7 +39,7 @@ I build bias-aware, edge-ready speech and language models for under-represented 
     <td>
         <strong>B.E. in Electronics and Communication Engineering</strong>
         <br>
-      Anna University
+      CSI College of Engineering, Anna University
     </td>
   </tr>
 </table>
@@ -101,13 +101,30 @@ I build bias-aware, edge-ready speech and language models for under-represented 
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Selected Publications <a href="https://hb-bg.github.io/blob/master/publications/selected.bib"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
 
 <a href="https://scholar.google.co.in/citations?user=_5XB1ksAAAAJ&hl=en" class="btn btn-primary" style="padding: 0.3em;">
   <i class="ai ai-google-scholar"></i> Google Scholar
 </a>
 
 <table class="table table-hover">
+
+
+<tr>
+<td class="col-md-3"><img src="images/publications/m3lm-se.png"/></td>
+<td>
+    <strong>M3LM-SpeechEncoder: Multi-View Acoustic and Semantic Fusion for Foundation Models</strong><br>
+    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma Unnikrishnan, Jairam R <br>
+    Compuational Linguistics<br>
+[<a href='javascript: none'
+    onclick='$("#abs_7").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/M3LM-SpeechEncoder' target='_blank'>code</a>] <br>
+    
+<div id="abs_7" style="text-align: justify; display: none">
+Spoken language carries two fundamentally opposing forms of information: discrete linguistic content, which requires abstracting away speaker variance, and continuous paralinguistic identity, which relies directly on vocal-tract resonance and prosody. Contemporary Audio Large Language Models (Audio-LLMs) typically force both modalities through a single homogenized stream or early discrete tokenizers, resulting in phonetic blurring, loss of biometric fidelity, and severe demographic biases under noisy, real-world conditions. To resolve this conflict, we propose the <strong>M3LM-SpeechEncoder</strong>, a dual-stream, multi-view foundation architecture coupled with a <strong>Parallel Omni-Adapter</strong> framework. In the first stage, the encoder models continuous phonetic context and spectral-temporal acoustics in parallel, harmonizing both views through asymmetric stop-gradient cross-modal fusion and curriculum-guided uncertainty weighting to prevent gradient interference across self-supervised and demographic objectives. In the second stage, the pre-trained foundation model is strictly frozen, and lightweight, task-decoupled adapters with adversarial confounder pruning are attached to isolate mutually independent subspaces for speaker identity, language, gender, age, and non-autoregressive speech recognition. Extensive evaluations across in-domain, open-set, and zero-shot cross-domain benchmarks demonstrate that our frozen dual-stream representation outperforms specialized single-task baselines in cross-lingual speaker verification and language identification while eliminating training-volume bias across underrepresented languages. Furthermore, by compressing sequential audio context by an order of magnitude while operating over 35x faster than real-time, the M3LM-SpeechEncoder provides an equitable, computationally agile auditory perceiver primed for direct integration with generative Text LLMs.
+</div>
+
+</td>
+</tr>
+
 
 <tr>
 <td class="col-md-3"><img src="images/publications/survey-m3lm.png"/></td>
@@ -116,26 +133,10 @@ I build bias-aware, edge-ready speech and language models for under-represented 
     <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Reshma Unnikrishnan, Meenakshi, Jairam R <br>
     Information Fusion<br>
 [<a href='javascript: none'
-    onclick='$("#abs_6").toggle()'>abs</a>] [pdf]  [code] <br>
+    onclick='$("#abs_6").toggle()'>abs</a>] [<a href='https://ssrn.com/abstract=7615598' target='_blank'>pdf</a>]  [<a href='https://github.com/rbg-research/M3-Transformers-Survey' target='_blank'>code</a>] <br>
     
 <div id="abs_6" style="text-align: justify; display: none">
 This survey reviews recent advances in Multimodal Multilingual Multitask transformers that jointly process speech and text, with a focus on their role as information fusion systems. We introduce a six‑dimensional taxonomy covering architecture type, pre‑training objectives, modality integration strategies, training data regimes, language coverage and task support. By using it we organised more than forty representative models, ranging from encoder‑only self supervised learning encoders (wav2vec 2.0, XLS‑R) to unified encoder-decoder systems (mSLAM, Mu2SLAM, SeamlessM4T, Whisper) and emerging audio‑aware large language models (SpeechGPT, SALMONN, Qwen‑Audio, SpeechLM). Benchmarks such as LibriSpeech, CoVoST 2, MuST‑C, FLEURS, VoxPopuli, Multilingual LibriSpeech, Common Voice, ML‑SUPERB 2.0, AudioBench, BLASER and HPSU, were used to compare these architectures across speech-text tasks, and quantify where current designs succeed and where they fail, especially on low‑resource and typologically distant languages, code‑switched speech, long‑form audio and paralinguistic cues. We then analyse key limitations like speech-text modality gap, quadratic computational cost, data imbalance, evaluation fragmentation and fairness concerns. It also proposes a research road-map spanning improved cross‑modal alignment, more efficient and modular fusion architectures, stronger low‑resource support and standardised multilingual benchmarks. Overall, the survey provides an architectural and algorithmic perspective on speech-text fusion that outlines concrete steps towards robust, equitable and real‑time multimodal communication systems.
-</div>
-
-</td>
-</tr>
-
-<tr>
-<td class="col-md-3"><img src="images/publications/survey-m3lm-indic.png"/></td>
-<td>
-    <strong>Multimodal Solutions in Low-Resource Indian Code-Mixing: A Systematic Survey of Speech-Text Transformers</strong><br>
-    <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Jairam R, Meenakshi, Reshma Unnikrishnan <br>
-    Engineering Applications of Artificial Intelligence<br>
-[<a href='javascript: none'
-    onclick='$("#abs_7").toggle()'>abs</a>] [pdf]  [code] <br>
-    
-<div id="abs_7" style="text-align: justify; display: none">
-Code-mixing, such as the blending of Hinglish and Tanglish, is a prevalent communication method in multilingual countries like India, but it suffers from severe data scarcity and linguistic challenges like non-standard grammar and scripts. Since the traditional unimodal models fail to resolve the continuous nature of speech and the discreteness of text in these environments. This study explores Multimodal Multilingual Multitask transformers to explicitly bridge the gap between artificial intelligence theory and practical engineering. The primary contribution in AI is the formulation of a novel six-dimensional taxonomy encompassing architectural parameters, pre-training methods, multimodal approaches, multilingualism, datasets, and tasks to systematically evaluate these advanced speech-text transformers. The primary application in engineering involves analysing these state-of-the-art fusion methods to build and optimize robust natural language processing pipelines for low-resource Indian dialects. By benchmarking these AI architectures across seven common code-mixed NLP tasks, this study identifies critical system vulnerabilities, including script biases and tokenization failures during intra-sentential language switches. Ultimately, this analysis provides an engineering roadmap for developing efficient cross-modal fusion mechanisms and code-switch-aware pre-training methods optimized for real-world deployment.
 </div>
 
 </td>
@@ -148,7 +149,7 @@ Code-mixing, such as the blending of Hinglish and Tanglish, is a prevalent commu
     <strong>Barathi Ganesh HB </strong>, Michal Ptaszynski, Meenakshi, Jairam R <br>
     WMT EMNLP 2026<br>
 [<a href='javascript: none'
-    onclick='$("#abs_1").toggle()'>abs</a>] [pdf]  [<a href='https://github.com/rbg-research/EMNLP-2026' target='_blank'>code</a>] <br>
+    onclick='$("#abs_1").toggle()'>abs</a>] [<a href='https://www2.statmt.org/wmt26/pdf/2026.wmt-1.152.pdf' target='_blank'>pdf</a>]  [<a href='https://github.com/rbg-research/EMNLP-2026' target='_blank'>code</a>] <br>
     
 <div id="abs_1" style="text-align: justify; display: none">
 This paper details the  submission of team TIP-RBG-AI for the WMT26 Indic-MT shared task. Addressing severe data sparsity, unstandardized orthographies, and script-level discrepancies across eleven Indic languages, we introduce a robust, resource-agnostic cross-lingual framework. Rather than relying on standard downstream parameter fine-tuning, our methodology optimizes zero-shot inference topologies across three massively multilingual machine translation architectures: NLLB-200, MADLAD-400, and IndicTrans2. To systematically resolve vocabulary mismatch and tokenizer fragmentation, we implement a three-tiered preprocessing pipeline comprising baseline untuned direct inference for native scripts, translinear normalization via algorithmic back-transliteration for Romanized textual representations, and phylogenetic script mapping for undocumented, scriptless vernaculars. Empirical evaluations demonstrate that structurally aligning orthographic decoding environments and exploiting cross-lingual family networks substantially enriches semantic fidelity. Without executing a single downstream parameter update, our purely zero-shot framework secured multiple podium placements, including second-place finishes in the Bodo and Manipuri (Meitei Mayek) to English tracks, validating the immense potential of frontend representation alignment in extreme low-resource translation.
